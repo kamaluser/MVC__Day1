@@ -1,0 +1,10 @@
+﻿@{
+    var product = ViewBag.Product;
+}
+
+<h1>Product Detail</h1>
+<div>
+    <p>Id: @product.Id</p>
+    <p>Name: @product.Name</p>
+    <p style="color: @(product.Price < 10 ?  "red" : "green")">Price: @product.Price</p>
+</div>
